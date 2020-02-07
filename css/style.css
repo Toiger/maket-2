@@ -357,10 +357,11 @@ margin: 0 0 30px 0;
 
 .realization-bottom{
     width: 100%;
-    min-height: 642px;
+    min-height: 700px;
     position: relative;
     background-color: #fbfaf8;
     padding: 83px 0 0 0;
+
 }
 
 .realization-bottom-title{
@@ -389,10 +390,13 @@ margin: 0 0 46px 583px;
 
 
 .realization-bottom-img-left{
+    display: inline-block;
+    vertical-align: bottom;
     width: 770px;
     height: 400px;
     position: absolute;
     margin: 82px 0 0 346px;
+   
 }
 
 .realization-bottom-img-left:hover{
@@ -400,13 +404,17 @@ margin: 0 0 46px 583px;
     height: 482px;
     margin: 0 0 0 346px;
     transition: 0.5s;
+    position: absolute;
+    
 }
 
 .realization-bottom-img-right{
     width: 770px;
     height: 400px;
-    position: absolute;
     margin: 82px 0 0 806px;
+    position: absolute;
+    
+   
 }
 
 .realization-bottom-img-right:hover{
@@ -414,6 +422,7 @@ margin: 0 0 46px 583px;
     height: 482px;
     margin: 0 0 0 806px;
     transition: 0.5s;
+   
 }
 
 .realization-bottom-img-center{
@@ -421,6 +430,11 @@ margin: 0 0 46px 583px;
     height: 482px;
     position: absolute;
     margin: 0 0 0 576px;
+   
+}
+
+.realization-img{
+    margin: 104px 0 0 0;
 }
 
 aside{
@@ -429,6 +443,7 @@ aside{
     justify-content: space-between;
     min-height: 150px;
     background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    position: relative;
 }
 
 .aside-left{

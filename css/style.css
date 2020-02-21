@@ -43,12 +43,18 @@
 
 
 .container{
-    width: 1920px;
-    margin: 0 auto;
+     margin: 0;
+    padding: 0;
+}
+
+body{
+   max-width: 1920px;
+     padding: 0;
+        margin: 0;
 }
 
 .header{
-    width: 100%;
+    max-width: 1920px;
     min-height: 1024px;
     background-image: url(../img/photo_11982.jpg);
     background-size: cover;
@@ -334,12 +340,11 @@ margin: 0 auto;
 }
 
 .pagination {
-  position: absolute;
   width: 100px;
   display: flex;
   justify-content: space-between;
-   margin: 319px 913px 19px 909px;
-  
+  margin: 0 auto;
+  order: 1;
 }
 
 .pagination-item {
@@ -430,6 +435,9 @@ margin: 0 0 30px 0;
 }
 
 .realization-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     min-height: 700px;
     position: relative;
@@ -450,7 +458,6 @@ margin: 0 0 24px 0;
 }
 
 .realization-bottom-text{
-    display: block; 
     width: 757px;
     min-height: 53px;
 font-family: montserrat-light;
@@ -459,17 +466,13 @@ font-weight: 300;
 line-height: 28px;
 text-align: center;
 color: #8c8c8c;
-margin: 0 0 46px 583px;
+margin: 0 0 46px 0;
 }
 
 
 .realization-bottom-img-left{
-    display: block;
-    vertical-align: bottom;
-    width: 770px;
+    width: 30%;
     height: 400px;
-    position: absolute;
-    margin: 82px 0 0 346px;
    
 }
 
@@ -483,12 +486,9 @@ margin: 0 0 46px 583px;
 }
 
 .realization-bottom-img-right{
-    display: block;
-    width: 770px;
+    width: 30%;
     height: 400px;
-    margin: 82px 0 0 806px;
-    position: absolute;
-    
+    margin: left;
    
 }
 
@@ -502,14 +502,14 @@ margin: 0 0 46px 583px;
 
 .realization-bottom-img-center{
     display: block;
-    width: 770px;
-    height: 482px;
-    position: absolute;
-    margin: 0 0 0 576px;
-   
+    width: 30%;
+    height: 482px; 
 }
 
 .realization-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin: 104px 0 0 0;
 }
 
@@ -573,15 +573,15 @@ font-family: montserrat-light;
 font-size: 16px;
 line-height: 28px;
 color: #8c8c8c;
-margin: 0 0 40px 583px;
+margin: 0 0 40px 0;
 }
 
 .our-latest-projects-menu {
-    margin: 0 657px 40px 658px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 0 40px 0;
     
 }
 
@@ -624,9 +624,10 @@ margin: 0 0 0 10px;
 .container-article{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 360px 40px 360px;
+    width: 70%;
+    margin: 0 0 40px 0;
     
 }
 
@@ -743,13 +744,15 @@ margin: 0;
 }
 
 .our-latest-projects {
+    display: flex;
     padding: 0 0 80px 0;
+    flex-direction: column;
+   align-items: center;
 }
 
 .waxom-video {
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 705px;
     position: relative;
 }
@@ -1505,7 +1508,6 @@ input[type="checkbox"]:checked ~ .menu-nav {
 
 {   
     html{
-        width: 100%;
         padding: 0;
         margin: 0;
     }
@@ -1517,6 +1519,7 @@ input[type="checkbox"]:checked ~ .menu-nav {
     }
     
     body{
+        box-sizing: border-box;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -1651,7 +1654,7 @@ input[type="checkbox"]:checked ~ .menu-nav {
     
     .our-latest-projects{
         width: 100%;
-        padding: 0 10px 0 10px;
+
     }
     .our-latest-projects-title{
         font-size: 16px;
@@ -1659,12 +1662,14 @@ input[type="checkbox"]:checked ~ .menu-nav {
     }
     .our-latest-projects-text{
         font-size: 14px;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     
     .our-latest-projects-menu{
-        margin: 10px 0 10px 0;
+        width: 90%;
+       margin: 0 auto;
+       padding: 10px 0 10px 0;
     }
     .our-latest-projects-button{
         font-size: 14px;
@@ -1699,8 +1704,7 @@ input[type="checkbox"]:checked ~ .menu-nav {
     }
     
     .video-item{
-        height: 100%;
-        width:100%;
+        
     }
     .video-txt-wrp{
        width: 95%;
@@ -1929,3 +1933,7 @@ input[type="checkbox"]:checked ~ .menu-nav {
     }
 }
 
+
+video {
+    max-width: 1920px;
+}
